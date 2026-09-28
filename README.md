@@ -8,20 +8,6 @@ skipped. The keyword lists are `CS_RE` / `NON_CS_RE` at the top of `tracker.py`.
 Issues are labeled `big-tech` or `startup`. Postings already reported
 are recorded in `seen.json`, which the workflow commits back after each run.
 
-## Setup
-
-1. Push this repo to GitHub.
-2. **Settings → Actions → General → Workflow permissions**: choose
-   "Read and write permissions". The workflow creates issues and pushes `seen.json`.
-3. **Email:** GitHub only emails you about new issues if you watch the repo.
-   Use **Watch → All Activity**, and turn on email under
-   **Settings → Notifications**. Issues opened by `github-actions[bot]` then
-   arrive as emails.
-4. **Actions → Track internships → Run workflow** to run it once by hand.
-   The first run has no `seen.json`, so it reports **every** matching posting
-   that is currently open (about 20 at setup time). After that, you only get
-   postings that are new.
-
 Run it locally with Python 3.9 or later (standard library only):
 
 ```sh
