@@ -1,0 +1,109 @@
+{
+  "Anyscale": {},
+  "Baseten": {},
+  "Brex": {},
+  "Chainguard": {},
+  "Clerk": {},
+  "Cognition": {},
+  "Cursor": {},
+  "Fireworks AI": {},
+  "Hex": {
+    "6186215004": {
+      "first_seen": "2026-09-28",
+      "title": "Product Engineer Intern"
+    }
+  },
+  "LangChain": {},
+  "Mercury": {
+    "6199367004": {
+      "first_seen": "2026-09-28",
+      "title": "Software Engineering Intern - Spring 2027"
+    }
+  },
+  "Modal": {
+    "38888294-6bc7-4dab-b072-6d0f0c2ed79a": {
+      "first_seen": "2026-09-28",
+      "title": "ML Research Intern"
+    }
+  },
+  "Netflix": {
+    "790315673635": {
+      "first_seen": "2026-09-28",
+      "title": "Video Algorithms Intern, Video Coding (Gaussian Splatting), Fall 2026"
+    },
+    "790317916733": {
+      "first_seen": "2026-09-28",
+      "title": "Machine Learning/AI Scientist PhD Intern, Winter 2027"
+    },
+    "790317917022": {
+      "first_seen": "2026-09-28",
+      "title": "Machine Learning/AI Infrastructure Engineering Intern (AI Platform) PhD, Winter 2027"
+    }
+  },
+  "Pinecone": {},
+  "Plaid": {},
+  "PlanetScale": {},
+  "Replit": {},
+  "Supabase": {},
+  "Tailscale": {},
+  "Teleport": {},
+  "Temporal": {},
+  "Together AI": {
+    "5232036007": {
+      "first_seen": "2026-09-28",
+      "title": "Software Engineer Intern (Summer 2027)"
+    },
+    "5238031007": {
+      "first_seen": "2026-09-28",
+      "title": "Software Engineer Intern (Winter 2027)"
+    },
+    "5238411007": {
+      "first_seen": "2026-09-28",
+      "title": "Systems Research Engineer Intern - GPU Programming (Winter 2027)"
+    },
+    "5238460007": {
+      "first_seen": "2026-09-28",
+      "title": "Systems Research Engineer Intern - GPU Programming (Summer 2027)"
+    },
+    "5238461007": {
+      "first_seen": "2026-09-28",
+      "title": "Research Intern, Inference (Winter 2027)"
+    },
+    "5238462007": {
+      "first_seen": "2026-09-28",
+      "title": "Research Intern, Inference (Summer 2027)"
+    },
+    "5238465007": {
+      "first_seen": "2026-09-28",
+      "title": "Research Intern, Model Shaping (Winter 2027)"
+    },
+    "5238466007": {
+      "first_seen": "2026-09-28",
+      "title": "Research Intern, Model Shaping (Summer 2027)"
+    },
+    "5238467007": {
+      "first_seen": "2026-09-28",
+      "title": "Research Intern, Frontier Agents (Winter 2027)"
+    },
+    "5238468007": {
+      "first_seen": "2026-09-28",
+      "title": "Research Intern, Frontier Agents (Summer 2027)"
+    },
+    "5238472007": {
+      "first_seen": "2026-09-28",
+      "title": "Software Development In Test Intern (Summer 2027)"
+    }
+  },
+  "Vercel": {
+    "6181755004": {
+      "first_seen": "2026-09-28",
+      "title": "Software Engineering Intern - Winter '27"
+    },
+    "6181759004": {
+      "first_seen": "2026-09-28",
+      "title": "Software Engineering Intern - Summer '27"
+    }
+  },
+  "Warp": {},
+  "WorkOS": {}
+}
