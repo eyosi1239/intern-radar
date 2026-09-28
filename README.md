@@ -32,8 +32,6 @@ Add an entry to `companies.json`. `category` is `startup` or `big-tech`.
 {"name": "Example", "category": "big-tech", "board": "workday", "tenant": "example", "wd": "wd5", "site": "External"}
 ```
 
-Before you commit, run `python tracker.py --dry-run --only Example` and check that it
-reports `[ok]` with a non-zero job count.
 
 ## Fixing a broken board
 
