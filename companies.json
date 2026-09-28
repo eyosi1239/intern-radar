@@ -1,0 +1,29 @@
+{
+  "companies": [
+    {"name": "Modal", "category": "startup", "board": "ashby", "slug": "modal"},
+    {"name": "Baseten", "category": "startup", "board": "ashby", "slug": "baseten"},
+    {"name": "Fireworks AI", "category": "startup", "board": "ashby", "slug": "fireworks"},
+    {"name": "Anyscale", "category": "startup", "board": "ashby", "slug": "anyscale"},
+    {"name": "Pinecone", "category": "startup", "board": "ashby", "slug": "pinecone"},
+    {"name": "LangChain", "category": "startup", "board": "ashby", "slug": "langchain"},
+    {"name": "Cursor", "category": "startup", "board": "ashby", "slug": "cursor"},
+    {"name": "Cognition", "category": "startup", "board": "ashby", "slug": "cognition"},
+    {"name": "WorkOS", "category": "startup", "board": "ashby", "slug": "workos"},
+    {"name": "Clerk", "category": "startup", "board": "ashby", "slug": "clerk"},
+    {"name": "Teleport", "category": "startup", "board": "ashby", "slug": "goteleport"},
+    {"name": "Tailscale", "category": "startup", "board": "greenhouse", "slug": "tailscale"},
+    {"name": "Chainguard", "category": "startup", "board": "greenhouse", "slug": "chainguard"},
+    {"name": "Temporal", "category": "startup", "board": "ashby", "slug": "temporal"},
+    {"name": "Supabase", "category": "startup", "board": "ashby", "slug": "supabase"},
+    {"name": "Vercel", "category": "startup", "board": "greenhouse", "slug": "vercel"},
+    {"name": "PlanetScale", "category": "startup", "board": "greenhouse", "slug": "planetscale"},
+    {"name": "Hex", "category": "startup", "board": "greenhouse", "slug": "hextechnologies"},
+    {"name": "Warp", "category": "startup", "board": "greenhouse", "slug": "warp"},
+    {"name": "Mercury", "category": "startup", "board": "greenhouse", "slug": "mercury"},
+    {"name": "Plaid", "category": "startup", "board": "ashby", "slug": "plaid"},
+    {"name": "Brex", "category": "startup", "board": "greenhouse", "slug": "brex"},
+    {"name": "Replit", "category": "startup", "board": "ashby", "slug": "replit"},
+    {"name": "Together AI", "category": "startup", "board": "greenhouse", "slug": "togetherai"},
+    {"name": "Netflix", "category": "big-tech", "board": "eightfold", "host": "explore.jobs.netflix.net", "domain": "netflix.com"}
+  ]
+}

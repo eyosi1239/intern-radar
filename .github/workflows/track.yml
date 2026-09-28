@@ -1,0 +1,72 @@
+name: Track internships
+
+on:
+  # Cron is UTC and Central Time shifts with DST, so schedule both variants
+  # and let the gate step below pick the pair that matches 8am / 6pm Central.
+  schedule:
+    - cron: "0 13 * * *"  # 8am CDT
+    - cron: "0 14 * * *"  # 8am CST
+    - cron: "0 23 * * *"  # 6pm CDT
+    - cron: "0 0 * * *"   # 6pm CST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: track-internships
+  cancel-in-progress: false
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Gate on Central Time DST
+        id: gate
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          zone=$(TZ=America/Chicago date +%Z)
+          case "${{ github.event.schedule }}" in
+            "0 13 * * *"|"0 23 * * *") want=CDT ;;
+            *) want=CST ;;
+          esac
+          if [ "$zone" = "$want" ]; then run=true; else run=false; fi
+          echo "Central zone is $zone, this cron is for $want -> run=$run"
+          echo "run=$run" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/checkout@v4
+        if: steps.gate.outputs.run == 'true'
+
+      - uses: actions/setup-python@v5
+        if: steps.gate.outputs.run == 'true'
+        with:
+          python-version: "3.12"
+
+      - name: Ensure labels exist
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          gh label create big-tech --color 1D76DB --description "Big tech internship" --force
+          gh label create startup  --color 0E8A16 --description "Startup internship" --force
+
+      - name: Run tracker
+        if: steps.gate.outputs.run == 'true'
+        run: python tracker.py
+
+      - name: Commit seen.json
+        if: always() && steps.gate.outputs.run == 'true'
+        run: |
+          [ -f seen.json ] || { echo "no seen.json to commit"; exit 0; }
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add seen.json
+          if git diff --cached --quiet; then
+            echo "seen.json unchanged"; exit 0
+          fi
+          git commit -m "Update seen.json [skip ci]"
+          git pull --rebase
+          git push
