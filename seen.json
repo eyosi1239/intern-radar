@@ -43,7 +43,12 @@
   "Pinecone": {},
   "Plaid": {},
   "PlanetScale": {},
-  "Replit": {},
+  "Replit": {
+    "7c3c9d29-cec2-4367-8564-eadaed165aea": {
+      "first_seen": "2026-10-08",
+      "title": "Software Engineering Intern \u2013 Winter 2027 (U.S. Based)"
+    }
+  },
   "Supabase": {},
   "Tailscale": {},
   "Teleport": {},
