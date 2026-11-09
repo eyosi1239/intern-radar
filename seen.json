@@ -1,7 +1,12 @@
 {
   "Anyscale": {},
   "Baseten": {},
-  "Brex": {},
+  "Brex": {
+    "8935242002": {
+      "first_seen": "2026-11-09",
+      "title": "Software Engineer, Internship - 2027"
+    }
+  },
   "Chainguard": {},
   "Clerk": {},
   "Cognition": {},
